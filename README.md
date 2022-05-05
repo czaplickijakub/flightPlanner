@@ -1,4 +1,4 @@
-# flightPlanner
+# Flight Planner
 ## A script for gathering info on airports
 
 ## USAGE: bash planner.sh
