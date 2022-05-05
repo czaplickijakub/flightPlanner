@@ -10,6 +10,7 @@ FLAG=1
 
 #command to use: 
 #`curl -s -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | xmllint --xpath "/response/airport/name/text()" -`
+# use this website to get path locations: https://xmltoolbox.appspot.com/xpath_generator.html
 
 echo "Hello! Thank you for using this flight planning software. Today is ${NOW}."
 echo "Please enter the airport you are departing: "
