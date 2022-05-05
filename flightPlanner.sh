@@ -51,4 +51,5 @@ else
     echo "Valid Runway!"
 fi
 #curl -s -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/kjfk | sed 's/<runway>\(.*\)<\/runway>/\1/g'
-#xpath -q -e '//span[@id="yfs_l10_goog"][1]/text()'
+
+#xmllint --xpath '/response/airport/name/text()' airportData
