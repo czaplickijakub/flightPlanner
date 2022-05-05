@@ -6,7 +6,6 @@
 
 NOW=$(date +%b' '%d)
 declare -a runwayList
-FLAG=1
 
 #the api used: https://flightplandatabase.com/dev/api#endpoint-weather
 #command to use: 
