@@ -40,6 +40,7 @@ echo "There are `curl -s -H "Accept: application/xml" https://api.flightplandata
 
 echo "The runways that are available are: ${runwayList[*]}"
 
+echo ""
 echo "--------------------------------------------------------------------------------------------------"
 echo "ARRIVAL"
 echo "--------------------------------------------------------------------------------------------------"
@@ -58,3 +59,8 @@ RUNAMT=${#runwayList[@]}
 echo "There are `curl -s -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${ARRIVE} | xmllint --xpath "/response/airport/runwayCount/text()" -` take off platforms available and ${RUNAMT} runways"
 
 echo "The runways that are available are: ${runwayList[*]}"
+
+echo ""
+echo "--------------------------------------------------------------------------------------------------"
+echo "Have a nice flight!"
+echo "--------------------------------------------------------------------------------------------------"
