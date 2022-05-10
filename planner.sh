@@ -71,13 +71,7 @@ echo "There are `curl -s -H "Authorization: Basic Y4e6Zj34PHGmHRxQwW8sHVkrBA76B5
 
 echo "The runways that are available are: ${runwayList[*]}"
 
-#
-#
-#
-#WEATHER
-#
-#
-#
+
 echo
 echo "Current visbility report at `curl -s -H "Authorization: Basic Y4e6Zj34PHGmHRxQwW8sHVkrBA76B5x0YCDQw82w" -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | xmllint --xpath "//*/airport/name/text()" -` Airport is: "
 echo "`curl -s -H "Authorization: Basic Y4e6Zj34PHGmHRxQwW8sHVkrBA76B5x0YCDQw82w" -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | grep -oP '(?<=<METAR>).*?(?=</METAR>)' | awk '{print substr($4,0,5);}' ` "
@@ -85,12 +79,6 @@ echo
 echo "Wind report:"
 echo "Direction: `curl -s -H "Authorization: Basic Y4e6Zj34PHGmHRxQwW8sHVkrBA76B5x0YCDQw82w" -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | grep METAR | awk '{print substr($3,0,3);}'` Degrees"
 echo "Speed: `curl -s -H "Authorization: Basic Y4e6Zj34PHGmHRxQwW8sHVkrBA76B5x0YCDQw82w" -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | grep METAR | awk '{print substr($3,4,2);}'` Knots"
-#
-#
-#
-#
-#
-
 
 echo ""
 echo "--------------------------------------------------------------------------------------------------"
