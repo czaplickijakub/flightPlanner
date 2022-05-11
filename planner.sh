@@ -10,10 +10,7 @@ declare -a runwayList
 correctInput1="false"
 correctInput2="false"
 
-#the api used: https://flightplandatabase.com/dev/api#endpoint-weather
-#command to use: 
-#`curl -s -H "Accept: application/xml" https://api.flightplandatabase.com/nav/airport/${DEPART} | xmllint --xpath "/response/airport/name/text()" -`
-# use this website to get path locations: https://xmltoolbox.appspot.com/xpath_generator.html
+#the api used: https://flightplandatabase.com/dev/api
 
 clear
 echo ""
